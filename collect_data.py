@@ -1,5 +1,5 @@
 import json
-from pprint import pprint
+from pathlib import Path
 
 import pandas as pd
 import requests
@@ -64,7 +64,8 @@ def all_fbx(fbx_lanes):
 
     display(df_all_fbx)
 
-    df_all_fbx.to_csv('all_fbx.csv')
+    output_folder = Path('data_output/')
+    df_all_fbx.to_csv(output_folder / 'all_fbx.csv')
 
 
 if __name__ == '__main__':

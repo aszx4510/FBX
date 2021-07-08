@@ -86,3 +86,6 @@ tmtagsHistory
 *.sublime-project
 *.sublime-workspace
 .bundle
+
+data/
+data_output/
